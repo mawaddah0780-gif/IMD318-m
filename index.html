@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mawaddah's Purple Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Quicksand',sans-serif;
+background:linear-gradient(135deg,#4B0082,#6A0DAD,#8A2BE2,#9370DB);
+color:white;
+text-align:center;
+}
+
+section{
+min-height:100vh;
+padding:100px 20px;
+}
+
+h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+h3{
+font-size:28px;
+margin:15px 0;
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px;
+background:rgba(75,0,130,0.95);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+.hero{
+padding-top:120px;
+}
+
+.photo, .small-photo{
+overflow:hidden;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:25px;
+background:rgba(255,255,255,0.15);
+border:3px solid white;
+}
+
+.photo{
+width:260px;
+height:260px;
+margin:20px auto;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.small-photo{
+width:220px;
+height:220px;
+border-radius:20px;
+border:2px solid white;
+}
+
+/* IMAGE INSIDE BOX */
+.photo img,
+.small-photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.3s ease;
+}
+
+.photo:hover img,
+.small-photo:hover img{
+transform:scale(1.05);
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.menu-card{
+width:250px;
+padding:20px;
+background:rgba(255,255,255,0.12);
+border-radius:25px;
+backdrop-filter:blur(10px);
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:white;
+color:#6A0DAD;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.card{
+max-width:900px;
+margin:auto;
+background:rgba(255,255,255,0.12);
+padding:30px;
+border-radius:25px;
+backdrop-filter:blur(10px);
+}
+
+.family-row{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:25px;
+text-align:center;
+}
+
+.member{
+width:230px;
+text-align:center;
+margin:0 auto;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:20px;
+}
+
+footer{
+padding:30px;
+font-size:16px;
+}
+
+section{
+text-align:center;
+}
+
+.card{
+margin:30px auto;
+text-align:center;
+}
+
+.card .photo,
+.card .small-photo{
+margin:20px auto;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About Me</a>
+<a href="#family">Family</a>
+<a href="#friends">Friends</a>
+<a href="#education">Education</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+
+<section id="home" class="hero">
+
+<h1>WELCOME TO MY WEBSITE</h1>
+
+<div class="photo">
+<img src="me.jpg">
+</div>
+
+<h2>Mawaddah</h2>
+
+<p>Click any section below to explore my website.</p>
+
+<div class="menu">
+
+<div class="menu-card">
+<div class="small-photo">
+<img src="me2.jpg">
+</div>
+<a class="btn" href="#about">About Me</a>
+</div>
+
+<div class="menu-card">
+<div class="small-photo">
+<img src="familyall.jpg">
+</div>
+<a class="btn" href="#family">My Family</a>
+</div>
+
+<div class="menu-card">
+<div class="small-photo">
+<img src="trio.jpg">
+</div>
+<a class="btn" href="#friends">My Friends</a>
+</div>
+
+<div class="menu-card">
+<div class="small-photo">
+<img src="05.jpg">
+</div>
+<a class="btn" href="#education">My Education</a>
+</div>
+
+<div class="menu-card">
+<div class="small-photo">
+<img src="kasah.jpg">
+</div>
+<a class="btn" href="#gallery">Gallery</a>
+</div>
+
+<div class="menu-card">
+<div class="small-photo">
+<img src="contact.jpg">
+</div>
+<a class="btn" href="#contact">Contact Me</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<div class="photo"><img src="me2.jpg">
+</div>
+
+<p><b>Name:</b> Intan Nur Mawaddah Binti Mohamad Tarmizi</p>
+<p><b>Age:</b> 21 Years Old</p>
+<p><b>Birthday:</b> 25 May 2005</p>
+
+<div class="small-photo">
+<img src="myart.jpg">
+</div>
+
+<p><b>Height:</b> 160 cm</p>
+<p><b>Hobby:</b> Reading Books & Drawing</p>
+
+<br>
+
+<h3>Favourite Games</h3>
+
+<div class="small-photo">
+<img src="WUWA.jpg">
+</div>
+<p>Wuthering Waves</p>
+
+<div class="small-photo">
+<img src="ML.jpg">
+</div>
+<p>Mobile Legends</p>
+
+<div class="small-photo">
+<img src="PUBG.jpg">
+</div>
+<p>PUBG</p>
+
+<br>
+
+<p><b>Place of Birth:</b> Hospital Kulim</p>
+<p><b>Favourite Colour:</b> Purple</p>
+
+</div>
+
+</section>
+
+<!-- FAMILY -->
+<section id="family">
+
+<h2>My Family</h2>
+
+<div class="photo">
+<img src="family1.jpg">
+</div>
+
+<p>
+I have five siblings and a loving mother.
+My father passed away due to a heart attack 11 years ago.
+I am the fourth child in the family.
+</p>
+
+<br>
+
+<h3>My Mother</h3>
+
+<div class="photo">
+<img src="umi.jpg">
+</div>
+
+<p><b>Rosenizam Binti Ahamat</b></p>
+
+<div class="family-row">
+
+<div class="member">
+<div class="small-photo">
+<img src="along.jpg">
+</div>
+<p>Intan Farhana</p>
+<p>Married</p>
+</div>
+
+<div class="member">
+<div class="small-photo">
+<img src="angah.jpg">
+</div>
+<p>Intan Fazlina</p>
+<p>Single</p>
+</div>
+
+<div class="member">
+<div class="small-photo">
+<img src="ateh.jpg">
+</div>
+<p>Intan Nur Fatihah</p>
+<p>Married</p>
+</div>
+
+<div class="member">
+<div class="small-photo">
+<img src="alang.jpg">
+</div>
+<p>Intan Nur Mawaddah</p>
+<p>Single</p>
+</div>
+
+<div class="member">
+<div class="small-photo">
+<img src="ude.jpg">
+</div>
+<p>Intan Nur Fariesya</p>
+<p>Single</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FRIENDS -->
+
+<section id="friends">
+
+<h2>My Friends</h2>
+
+<div class="gallery">
+
+<div class="small-photo">
+<img src="kawan 1.jpg">
+</div>
+<div class="small-photo">
+<img src="kawan 3.jpg">
+</div>
+
+</div>
+
+<h3>Hidayanti & Sarah</h3>
+
+<div class="card">
+
+<p>
+We have been friends for more than five years.
+Throughout the years, we have created many wonderful memories together.
+They are kind, supportive, caring, and always encourage me during difficult times.
+Our friendship is built on trust, respect, laughter, and understanding.
+I am grateful to have such amazing friends who make every moment meaningful and unforgettable.
+</p>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2>My Education</h2>
+
+<div class="card">
+
+<div class="photo">
+<img src="skl.jpg">
+</div>
+<h3>Primary School</h3>
+<p>Sekolah Kebangsaan Lanai</p>
+
+<br>
+
+<div class="photo">
+<img src="YK.jpg">
+</div>
+<h3>Secondary School (Form 1 - Form 3)</h3>
+<p>Sekolah Agama Yayasan Khairiah</p>
+
+<br>
+
+<div class="photo">
+<img src="ksh.jpe">
+</div>
+<h3>Secondary School (Form 4 - Form 5)</h3>
+<p>Kolej Agama Sultan Abdul Halim</p>
+
+<br>
+
+<div class="photo">
+<img src="uitm.jpe">
+</div>
+<h3>University</h3>
+<p>Universiti Teknologi MARA (UiTM) Kedah</p>
+
+<p><b>Current Programme:</b></p>
+<p>Diploma in Information Management</p>
+
+<br>
+
+<h3>Achievements</h3>
+
+<p>🏆 Successfully Completed SPM</p>
+<p>🏆 Active Participant in School Activities</p>
+<p>🏆 Currently Pursuing Diploma in Information Management</p>
+<p>🏆 Developed Information Management Skills</p>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<h3>Favourite Photos</h3>
+
+<div class="gallery">
+<div class="small-photo">
+<img src="gunung.jpg">
+</div>
+<div class="small-photo">
+<img src="love.jpg">
+</div>
+</div>
+
+<h3>Family Photos</h3>
+
+<div class="gallery">
+<div class="small-photo">
+<img src="family3.jpg">
+</div>
+<div class="small-photo">
+<img src="anak2.jpg">
+</div>
+</div>
+
+<h3>Friend Photos</h3>
+
+<div class="gallery">
+<div class="small-photo">
+<img src="kawan2.jpeg">
+</div>
+<div class="small-photo">
+<img src="kawan4.jpg">
+</div>
+</div>
+
+<h3>Activities</h3>
+
+<div class="gallery">
+<div class="small-photo">
+<img src="vacation.jpg">
+</div>
+<div class="small-photo">
+<img src="golf.jpg">
+</div>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="card">
+
+<p><b>Email:</b></p>
+<p>mawaddah0780@gmail.com</p>
+
+<br>
+
+<p><b>Phone Number:</b></p>
+<p>013-656-7003</p>
+
+<br><br>
+
+<h3>Thank You</h3>
+
+<p>
+Thank you for visiting my personal website.
+I truly appreciate your time and interest in learning more about me.
+I hope you enjoyed exploring my family, friends, education, and experiences.
+May your day be filled with happiness and success.
+Thank you for your support and have a wonderful day!
+</p>
+
+</div>
+
+</section>
+
+<footer>
+Made with 💜 by Mawaddah
+</footer>
+
+</body>
+</html>                                                                                                                                                                                                             
